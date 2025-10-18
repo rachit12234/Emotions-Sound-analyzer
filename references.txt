@@ -1,0 +1,4 @@
+https://realpython.com/playing-and-recording-sound-python/#recording-audio
+
+https://www.youtube.com/watch?v=VXU4LSAQDSc
+
