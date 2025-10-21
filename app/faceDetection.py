@@ -26,7 +26,13 @@ while webcam.isOpened() :
 
     frame = cv.cvtColor(frame,cv.COLOR_RGB2BGR)
 
-    cv.imshow("camera",frame)
+    
+    cv.imshow("camera", frame)
+            
 
     if cv.waitKey(5) & 0xFF == ord("q"):
         break
+    
+        
+webcam.release()
+cv.destroyAllWindows

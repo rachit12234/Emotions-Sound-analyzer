@@ -2,3 +2,8 @@ https://realpython.com/playing-and-recording-sound-python/#recording-audio
 
 https://www.youtube.com/watch?v=VXU4LSAQDSc
 
+https://www.youtube.com/watch?v=c9vhHUGdav0
+
+mediapip facedetection tutorial
+https://www.youtube.com/watch?v=HEfiiFdFMVE
+

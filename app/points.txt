@@ -1,0 +1,118 @@
+Perfect — that’s the right mindset 🔥
+If you want to build your **own logic** for emotion recognition, having the **landmark reference map** is essential.
+
+Here’s a breakdown of **key MediaPipe FaceMesh landmark indices and their facial locations** 👇
+
+---
+
+## 🧠 MediaPipe FaceMesh Landmark Reference (Important Points Only)
+
+(There are 468 total points — but these are the ones most useful for emotion or expression analysis.)
+
+### 👃 Nose
+
+| Landmark   | Description              |
+| ---------- | ------------------------ |
+| **1**      | Nose tip                 |
+| **2**      | Nose bridge top          |
+| **4**      | Nose base center         |
+| **6, 197** | Left/right sides of nose |
+| **168**    | Bottom of nose bridge    |
+
+---
+
+### 👄 Mouth / Lips
+
+| Landmark | Description         |
+| -------- | ------------------- |
+| **61**   | Left mouth corner   |
+| **291**  | Right mouth corner  |
+| **0**    | Center of upper lip |
+| **17**   | Center of lower lip |
+| **13**   | Upper lip inner     |
+| **14**   | Lower lip inner     |
+| **78**   | Upper left lip      |
+| **308**  | Upper right lip     |
+| **82**   | Lower left lip      |
+| **312**  | Lower right lip     |
+
+---
+
+### 👁️ Eyes
+
+#### Left Eye:
+
+| Landmark | Description             |
+| -------- | ----------------------- |
+| **33**   | Outer corner (left eye) |
+| **133**  | Inner corner            |
+| **159**  | Upper eyelid            |
+| **145**  | Lower eyelid            |
+| **173**  | Center (approx.)        |
+
+#### Right Eye:
+
+| Landmark | Description              |
+| -------- | ------------------------ |
+| **362**  | Outer corner (right eye) |
+| **263**  | Inner corner             |
+| **386**  | Upper eyelid             |
+| **374**  | Lower eyelid             |
+| **390**  | Center (approx.)         |
+
+---
+
+### 👁️ Eyebrows
+
+#### Left Eyebrow:
+
+| Landmark | Description           |
+| -------- | --------------------- |
+| **70**   | Outer end             |
+| **105**  | Middle                |
+| **107**  | Inner end (near nose) |
+
+#### Right Eyebrow:
+
+| Landmark | Description |
+| -------- | ----------- |
+| **336**  | Inner end   |
+| **334**  | Middle      |
+| **300**  | Outer end   |
+
+---
+
+### 👂 Ears (for head tilt / rotation)
+
+| Landmark | Description             |
+| -------- | ----------------------- |
+| **234**  | Left ear (tragus area)  |
+| **454**  | Right ear (tragus area) |
+
+---
+
+### 🟤 Face Outline / Jaw
+
+| Landmark      | Description        |
+| ------------- | ------------------ |
+| **10**        | Chin               |
+| **152**       | Bottom of chin     |
+| **234**       | Left cheek         |
+| **454**       | Right cheek        |
+| **132, 361**  | Jawline left/right |
+| **234 → 454** | Face width line    |
+
+---
+
+### 📍 Forehead / Head Center (optional use)
+
+| Landmark | Description                                |
+| -------- | ------------------------------------------ |
+| **9**    | Between eyebrows                           |
+| **151**  | Mid forehead                               |
+| **10**   | Chin (used with 9 for vertical face angle) |
+
+---
+
+If you want, I can generate you a **visual landmark map (image)** labeling all key points on a face so you can easily pick which coordinates to use for your own equations.
+Would you like that?
