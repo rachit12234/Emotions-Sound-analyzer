@@ -30,8 +30,10 @@ def detect_emotion(current, cal):
         current_dist = abs(cc0[1] - cc17[1])
 
         if calibrated_dist < current_dist:
+            print("mouth_open? TRUE")
             return True
         else:
+            print("mouth_open? FALSE")
             return False
 
     def eyes_closed():
@@ -76,8 +78,6 @@ def detect_emotion(current, cal):
             return True
         else:
             return False
-
-    # ----------- Main Logic -----------
 
     if mouth_open() and not eyes_closed():
         return "Smile"
@@ -129,6 +129,7 @@ while webcam.isOpened() :
 
     cv.putText(frame, "Press T to calibrate", (20, 30),cv.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
 
+
     frame = cv.cvtColor(frame,cv.COLOR_RGB2BGR)
    
 
@@ -143,7 +144,7 @@ while webcam.isOpened() :
         # print(cal)
         cal = {id: current[id] for id in meshid}
         calibrated = True
-        print("✅ Calibration snapshot captured!")
+        print("Calibration Done")
 
     elif key == ord("q"):
         break
